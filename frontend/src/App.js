@@ -6,24 +6,16 @@ function App() {
   const [results, setResults] = useState([]);
   const [interpretation, setInterpretation] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [auditData, setAuditData] = useState(null);
 
   const handleSearch = async (e) => {
     e.preventDefault();
     if (!query) return;
     setLoading(true);
-    setAuditData(null);
     
     try {
       const response = await axios.get(`http://localhost:5003/search?q=${query}`);
       setResults(response.data.trials);
       setInterpretation(response.data.interpretation);
-
-      // Audit cross-check call
-      if (response.data.interpretation) {
-        const auditRes = await axios.post(`http://localhost:5003/audit`, response.data.interpretation);
-        setAuditData(auditRes.data);
-      }
     } catch (error) {
       console.error("Search failed", error);
     }
@@ -65,14 +57,6 @@ function App() {
         <h2 style={styles.countText}>
           {loading ? "Analyzing data..." : `Showing ${results.length} trials`}
         </h2>
-        {auditData && (
-          <div style={{
-            ...styles.badge,
-            backgroundColor: results.length === auditData.audit_count ? '#d4edda' : '#fff3cd'
-          }}>
-            {results.length === auditData.audit_count ? '✓ Data Integrity Verified' : `Audit: ${auditData.audit_count} matches`}
-          </div>
-        )}
       </div>
 
       <div style={styles.resultsGrid}>
