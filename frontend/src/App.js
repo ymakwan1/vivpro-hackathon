@@ -14,6 +14,7 @@ function App() {
     
     try {
       const response = await axios.get(`http://localhost:5003/search?q=${query}`);
+      console.log(response.data);
       setResults(response.data.trials);
       setInterpretation(response.data.interpretation);
     } catch (error) {
