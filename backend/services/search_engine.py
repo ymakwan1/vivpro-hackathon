@@ -23,12 +23,14 @@ class SearchEngine:
             must_clauses.append({
                 "bool": {
                     "should": [
-                        {"term": {"overall_status": status_val}},
+                        {
+                            "term": { "overall_status": status_val }
+                        },
                         {
                             "nested": {
                                 "path": "facilities",
                                 "query": {
-                                    "term": {"facilities.status": status_val}
+                                    "term": { "facilities.status": status_val }
                                 }
                             }
                         }
