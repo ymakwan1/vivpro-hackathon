@@ -11,7 +11,6 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      // Endpoint as per requirements: /search/<query>
       const response = await axios.get(`http://localhost:5003/search?q=${query}`);
       console.log(response);
       setResults(response.data.trials);
@@ -49,18 +48,18 @@ function App() {
           ))}
         </div>
       )}
-     
-      <div className="results-summary" style={{ margin: '20px 0', borderBottom: '2px solid #eee' }}>
-        <h2 style={{ fontSize: '1.2rem' }}>
-          {loading ? "Searching..." : (
-            <>
-              Found <strong>{results.length}</strong> 
-              {results.length === 1 ? ' trial' : ' trials'} for 
-              <span style={{ color: '#007bff' }}> "{query}"</span>
-            </>
-          )}
-        </h2>
-      </div>
+      
+    <div className="results-summary" style={{ margin: '20px 0', borderBottom: '2px solid #eee' }}>
+      <h2 style={{ fontSize: '1.2rem' }}>
+        {loading ? "Searching..." : (
+          <>
+            Found <strong>{results.length}</strong> 
+            {results.length === 1 ? ' trial' : ' trials'} for 
+            <span style={{ color: '#007bff' }}> "{query}"</span>
+          </>
+        )}
+      </h2>
+    </div>
 
       {/* 3. Results List  */}
       <div style={{ marginTop: '30px' }}>
@@ -68,7 +67,6 @@ function App() {
           <div key={trial.nct_id} style={{ border: '1px solid #ddd', padding: '20px', borderRadius: '8px', marginBottom: '15px' }}>
             <h3 style={{ margin: '0 0 10px 0' }}>{trial.brief_title || trial.official_title}</h3>
             <div style={{ fontSize: '14px', color: '#555' }}>
-              <p><strong>NCT ID:</strong> {trial.nct_id}</p>
               <p><strong>Status:</strong> {trial.overall_status}</p>
               <p><strong>Conditions:</strong> {Array.isArray(trial.conditions) ? trial.conditions.join(', ') : trial.conditions}</p>
               <p><strong>Phase:</strong> {trial.phase}</p>
