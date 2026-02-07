@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from pathlib import Path
 from elasticsearch import Elasticsearch, helpers
 
@@ -18,28 +17,41 @@ def get_mapping():
         "mappings": {
             "properties": {
                 "nct_id": {"type": "keyword"},
-                "brief_title": {"type": "text"},
-                "official_title": {"type": "text"},
+                "brief_title": {"type": "text", "analyzer": "standard"},
+                "official_title": {"type": "text", "analyzer": "standard"},
                 "overall_status": {"type": "keyword"},
                 "phase": {"type": "keyword"},
                 "conditions": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
                 "enrollment": {"type": "long"}, 
+                "sponsors": {
+                    "type": "nested",
+                    "properties": {
+                        "name": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
+                        "agency_class": {"type": "keyword"},
+                        "lead_or_collaborator": {"type": "keyword"}
+                    }
+                },
                 "facilities": {
                     "type": "nested",
                     "properties": {
                         "name": {"type": "text"},
+                        "status": {"type": "keyword"},
                         "city": {"type": "text", "fields": {"keyword": {"type": "keyword"}}},
                         "state": {"type": "keyword"},
                         "country": {"type": "keyword"}
                     }
                 },
-                "start_date": {"type": "date", "format": "strict_date_optional_time||epoch_millis||yyyy-MM-dd'T'HH:mm:ss.SSSZ"},
-                "completion_date": {"type": "date", "format": "strict_date_optional_time||epoch_millis||yyyy-MM-dd'T'HH:mm:ss.SSSZ"}
+                "start_date": {"type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||epoch_millis"},
+                "completion_date": {"type": "date", "format": "strict_date_optional_time||yyyy-MM-dd||epoch_millis"}
             }
         }
     }
 
 def generate_actions():
+    if not DATA_PATH.exists():
+        logger.error(f"File not found at {DATA_PATH}")
+        return
+
     with DATA_PATH.open("r", encoding="utf-8") as f:
         raw_data = json.load(f)
 
@@ -59,7 +71,10 @@ def generate_actions():
                 source.pop(d_field, None)
 
         if isinstance(source.get("conditions"), list):
-            source["conditions"] = [c.get("name", str(c)) if isinstance(c, dict) else str(c) for c in source["conditions"]]
+            source["conditions"] = [
+                c.get("name", str(c)) if isinstance(c, dict) else str(c) 
+                for c in source["conditions"]
+            ]
 
         yield {
             "_index": INDEX_NAME,
@@ -69,7 +84,7 @@ def generate_actions():
 
 def index_data():
     if not es.ping():
-        logger.error("ES Connection Failed")
+        logger.error("ES Connection Failed. Is Elasticsearch running?")
         return
 
     if es.indices.exists(index=INDEX_NAME):
@@ -80,7 +95,7 @@ def index_data():
     success, errors = helpers.bulk(es, generate_actions(), raise_on_error=False)
     
     if errors:
-        logger.error(f"Failed to index {len(errors)} docs. Example error: {errors[0]}")
+        logger.error(f"Failed to index {len(errors)} docs.")
     
     logger.info(f"Successfully indexed {success} trials.")
 

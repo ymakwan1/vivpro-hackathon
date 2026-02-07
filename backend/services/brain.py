@@ -11,7 +11,7 @@ class QueryBrain:
         Return ONLY a JSON object. 
         
         Rules:
-        - overall_status: Map "open" or "available" to "RECRUITING". 
+        - When a user mentions 'open' or 'active' trials, map the overall_status to RECRUITING. If they mention 'completed' or 'finished', map it to COMPLETED. Always return the status in uppercase to match the dataset. 
         - phase: Map "Phase 1" to "PHASE1", "Phase 2" to "PHASE2", etc.
         - city: Extract the city name if present.
         - condition: Extract the medical condition (e.g., Asthma, Cancer).

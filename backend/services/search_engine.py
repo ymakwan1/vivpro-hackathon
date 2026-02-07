@@ -1,41 +1,3 @@
-# class SearchEngine:
-#     def __init__(self, es_client):
-#         self.es = es_client
-#         self.index = "clinical_trials_es"
-
-#     def execute(self, entities):
-#         must_clauses = []
-
-#         #condition search
-#         if entities.get("condition"):
-#             must_clauses.append({
-#                 "multi_match": {
-#                     "query": entities["condition"],
-#                     "fields": ["brief_title", "conditions", "official_title"]
-#                 }
-#             })
-
-#         #exact filters
-#         if entities.get("phase"):
-#             must_clauses.append({"term": {"phase": entities["phase"]}})
-        
-#         if entities.get("overall_status"):
-#             must_clauses.append({"term": {"overall_status": entities["overall_status"]}})
-
-#         #nested search
-#         if entities.get("city"):
-#             must_clauses.append({
-#                 "nested": {
-#                     "path": "facilities",
-#                     "query": {
-#                         "match": { "facilities.city": entities["city"] }
-#                     }
-#                 }
-#             })
-
-#         query = {"query": {"bool": {"must": must_clauses}}}
-#         print(query)
-#         return self.es.search(index=self.index, body=query)
 class SearchEngine:
     def __init__(self, es_client):
         self.es = es_client
@@ -43,30 +5,35 @@ class SearchEngine:
 
     def execute(self, entities):
         must_clauses = []
-
-        if entities.get("condition"):
+        search_text = entities.get("condition") or entities.get("keyword")
+        if search_text:
             must_clauses.append({
                 "multi_match": {
-                    "query": entities["condition"],
-                    "fields": ["brief_title", "conditions", "conditions.name", "official_title"],
-                    "fuzziness": "AUTO" 
+                    "query": search_text,
+                    "fields": ["brief_title^3", "official_title^2", "conditions"],
+                    "fuzziness": "AUTO"
                 }
             })
 
         if entities.get("phase"):
-            must_clauses.append({
-                "query_string": {
-                    "default_field": "phase",
-                    "query": f"*{entities['phase']}*",
-                    "analyze_wildcard": True
-                }
-            })
+            must_clauses.append({"match": {"phase": {"query": entities["phase"]}}})
         
         if entities.get("overall_status"):
+            status_val = entities["overall_status"].upper()
             must_clauses.append({
-                "query_string": {
-                    "default_field": "overall_status",
-                    "query": f"*{entities['overall_status']}*"
+                "bool": {
+                    "should": [
+                        {"term": {"overall_status": status_val}},
+                        {
+                            "nested": {
+                                "path": "facilities",
+                                "query": {
+                                    "term": {"facilities.status": status_val}
+                                }
+                            }
+                        }
+                    ],
+                    "minimum_should_match": 1
                 }
             })
 
@@ -76,36 +43,50 @@ class SearchEngine:
                     "path": "facilities",
                     "score_mode": "max",
                     "query": {
-                        "match": { "facilities.city": entities["city"] }
+                        "match": { "facilities.city": {
+                            "query": entities["city"], 
+                            "fuzziness": "AUTO"} }
                     }
                 }
             })
-        
-        if entities.get("condition") or entities.get("keyword"):
+        if entities.get("country"):
             must_clauses.append({
-                "multi_match": {
-                    "query": entities.get("condition") or entities.get("keyword"),
-                    "fields": [
-                        "brief_title", 
-                        "official_title", 
-                        "conditions", 
-                        "sponsors.name"
-                    ],
-                    "fuzziness": "AUTO"
+                "nested": {
+                    "path": "facilities",
+                    "score_mode": "max",
+                    "query": {
+                        "match": { 
+                            "facilities.country": {
+                                "query": entities["country"], 
+                                "fuzziness": "AUTO"
+                            } 
+                        }
+                    }
                 }
             })
 
         if entities.get("sponsor"):
             must_clauses.append({
-                "multi_match": {
-                    "query": entities["sponsor"],
-                    "fields": [
-                        "sponsors.name",         
-                        "sponsors.agency_class"
-                    ],
-                    "operator": "and"
+                "nested": {
+                    "path": "sponsors",
+                    "score_mode": "avg",
+                    "query": {
+                        "bool": {
+                            "should": [
+                                { "match": { "sponsors.name": { "query": entities["sponsor"], "fuzziness": "AUTO" } } },
+                                { "term": { "sponsors.agency_class": entities["sponsor"].upper() } }
+                            ]
+                        }
+                    }
                 }
             })
 
-        query = {"query": {"bool": {"must": must_clauses}}}
+        query = {
+            "query": {
+                "bool": {
+                    "must": must_clauses
+                }
+            }
+        }
+        
         return self.es.search(index=self.index, body=query)
