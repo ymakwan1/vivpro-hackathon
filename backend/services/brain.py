@@ -122,14 +122,11 @@ class QueryBrain:
             
             entities = json.loads(response_body['content'][0]['text'])
             
-            # Clean up extracted entities - ensure they match expected format
             if "state" in entities and "city" not in entities:
-                # If state was extracted, keep it as state (search_engine handles it)
                 pass
             
             return entities
             
         except Exception as e:
             print(f"LLM Error: {e}")
-            # Return at least the original query as a fallback condition
             return {"condition": user_query}
