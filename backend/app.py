@@ -14,8 +14,9 @@ def search():
     print(user_query)
     
     entities = brain.extract_entities(user_query)
-    
+    print(f"Entities: {entities}")
     results = engine.execute(entities)
+    print(f"Results: {results}")
     
     return jsonify({
         "interpretation": entities,
