@@ -1,0 +1,1433 @@
+{
+    "nct_id": "NCT06890351",
+    "study_first_submitted_date": "2025-03-20T00:00:00.000Z",
+    "last_update_submitted_date": "2025-03-20T00:00:00.000Z",
+    "last_update_posted_date": "2025-03-24T00:00:00.000Z",
+    "results_first_posted_date": null,
+    "results_first_posted_date_type": "NA",
+    "start_date_type": "ESTIMATED",
+    "start_date": "2025-04-10T00:00:00.000Z",
+    "completion_date_type": "ESTIMATED",
+    "completion_date": "2028-04-03T00:00:00.000Z",
+    "primary_completion_date_type": "ESTIMATED",
+    "primary_completion_date": "2027-07-12T00:00:00.000Z",
+    "target_duration": "NA",
+    "study_type": "INTERVENTIONAL",
+    "acronym": "Umbriel",
+    "brief_title": "Dose Range Finding Study to Assess Efficacy and Safety of Tozorakimab in Adults With Uncontrolled Asthma on Medium-to-High Dose Inhaled Corticosteroids",
+    "official_title": "A Phase IIb, Multicentre, Double-blind, Placebo-controlled Dose Range Finding Study to Assess Efficacy and Safety of Tozorakimab in Adult Participants With Uncontrolled Asthma on Medium-to High Dose Inhaled Corticosteroids",
+    "overall_status": "NOT_YET_RECRUITING",
+    "phase": "PHASE2",
+    "enrollment": "540",
+    "enrollment_type": "ESTIMATED",
+    "source": "AstraZeneca",
+    "number_of_arms": "3",
+    "number_of_groups": "None",
+    "has_expanded_access": "No",
+    "expanded_access_type_individual": null,
+    "expanded_access_type_intermediate": null,
+    "expanded_access_type_treatment": null,
+    "has_dmc": 1.0,
+    "allocation": "RANDOMIZED",
+    "intervention_model": "PARALLEL",
+    "observational_model": "NA",
+    "primary_purpose": "TREATMENT",
+    "time_perspective": "NA",
+    "masking": "QUADRUPLE",
+    "masking_description": "NA",
+    "intervention_model_description": "This is a parallel-group treatment study with 3 arms. Participants will be randomised in a ratio of 1:1:1 to one of the 3 treatment arms.",
+    "subject_masked": 1.0,
+    "caregiver_masked": 1.0,
+    "investigator_masked": 1.0,
+    "outcomes_assessor_masked": 1.0,
+    "sampling_method": "NA",
+    "gender": "ALL",
+    "minimum_age": "18 Years",
+    "maximum_age": "75 Years",
+    "healthy_volunteers": false,
+    "age": [
+      {
+        "age_category": "adult"
+      },
+      {
+        "age_category": "older-adults"
+      }
+    ],
+    "detailed_description": null,
+    "brief_summaries_description": "This is a dose-range finding, double-blind, placebo-controlled, phase IIb study designed to assess efficacy and safety of tozorakimab administered subcutaneously in adult participants with uncontrolled asthma receiving medium-to-high dose inhaled corticosteroids.",
+    "id_information": [
+      {
+        "id_type": "REGISTRY",
+        "id_value": "2024-519116-14-00"
+      },
+      {
+        "id_type": null,
+        "id_value": "D9181C00002"
+      }
+    ],
+    "has_results": false,
+    "sponsors": [
+      {
+        "agency_class": "INDUSTRY",
+        "lead_or_collaborator": "lead",
+        "name": "AstraZeneca"
+      }
+    ],
+    "design_outcomes": [
+      {
+        "outcome_type": "secondary",
+        "measure": "Annualised rate of severe asthma exacerbations",
+        "time_frame": "Over 26 to 52 weeks",
+        "description": "The rate ratio of severe asthma exacerbations will be assessed in the participants with uncontrolled moderate-to-severe asthma and baseline eosinophils \\< 300 cells/\u00b5L and history of \u22652 severe exacerbations within 12 months prior to screening."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Time to first severe asthma exacerbation",
+        "time_frame": "Over 26 to 52 weeks",
+        "description": "Hazard ratio (tozorakimab versus placebo)"
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Change from baseline in pre-bronchodilator forced expiratory volume in 1 second (FEV1)",
+        "time_frame": "Over weeks 20 to 26",
+        "description": "Difference in mean change from baseline between tozorakimab and placebo."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Change from baseline in post-bronchodilator FEV1",
+        "time_frame": "At week 26",
+        "description": "Difference in mean change from baseline between tozorakimab and placebo."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Change from baseline in ACQ-6",
+        "time_frame": "At week 26",
+        "description": "Difference in mean change from baseline between tozorakimab and placebo."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Change from baseline in AQLQ(S)+12",
+        "time_frame": "At week 26",
+        "description": "Difference in mean change from baseline between tozorakimab and placebo."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Trough serum concentrations of tozorakimab",
+        "time_frame": "Over 52 weeks",
+        "description": "Pharmacokinetics: concentrations of tozorakimab in trough serum."
+      },
+      {
+        "outcome_type": "secondary",
+        "measure": "Anti-drug antibody incidence",
+        "time_frame": "Over 52 weeks",
+        "description": "Immunogenicity: Number of Participants With Positive Antibodies to tozorakimab"
+      },
+      {
+        "outcome_type": "primary",
+        "measure": "Annualised rate of severe asthma exacerbations",
+        "time_frame": "Over 26 to 52 weeks",
+        "description": "The rate ratio of severe asthma exacerbations will be assessed in the participants with uncontrolled moderate-to-severe asthma and \u2265 1 severe exacerbation within 12 months prior to screening."
+      }
+    ],
+    "facilities": [
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Bakersfield",
+        "state": "California",
+        "zip": "93301",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Huntington Beach",
+        "state": "California",
+        "zip": "92647",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "La Mesa",
+        "state": "California",
+        "zip": "91942",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Newport Beach",
+        "state": "California",
+        "zip": "92663",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "San Jose",
+        "state": "California",
+        "zip": "95117",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Wilmington",
+        "state": "Delaware",
+        "zip": "19805",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Cutler Bay",
+        "state": "Florida",
+        "zip": "33189",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Hialeah",
+        "state": "Florida",
+        "zip": "33012",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Leesburg",
+        "state": "Florida",
+        "zip": "34748",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Miami",
+        "state": "Florida",
+        "zip": "33155",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Miami",
+        "state": "Florida",
+        "zip": "33175",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Miami",
+        "state": "Florida",
+        "zip": "33197",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Orlando",
+        "state": "Florida",
+        "zip": "32819",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Palmetto Bay",
+        "state": "Florida",
+        "zip": "33157",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Tampa",
+        "state": "Florida",
+        "zip": "33607",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Winter Park",
+        "state": "Florida",
+        "zip": "32789",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Boise",
+        "state": "Idaho",
+        "zip": "83706",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Indianapolis",
+        "state": "Indiana",
+        "zip": "46268",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "West Des Moines",
+        "state": "Iowa",
+        "zip": "50266",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Louisville",
+        "state": "Kentucky",
+        "zip": "40218",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "White Marsh",
+        "state": "Maryland",
+        "zip": "21162",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Farmington Hills",
+        "state": "Michigan",
+        "zip": "48336",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Warren",
+        "state": "Michigan",
+        "zip": "48088",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Saint Louis",
+        "state": "Missouri",
+        "zip": "63141",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Bellevue",
+        "state": "Nebraska",
+        "zip": "68123",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Grand Island",
+        "state": "Nebraska",
+        "zip": "68803",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Omaha",
+        "state": "Nebraska",
+        "zip": "68134",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Toms River",
+        "state": "New Jersey",
+        "zip": "08755",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Maspeth",
+        "state": "New York",
+        "zip": "11378",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Asheville",
+        "state": "North Carolina",
+        "zip": "28803",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Huntersville",
+        "state": "North Carolina",
+        "zip": "28078",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kings Mountain",
+        "state": "North Carolina",
+        "zip": "28086",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Toledo",
+        "state": "Ohio",
+        "zip": "43617",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Edmond",
+        "state": "Oklahoma",
+        "zip": "73034",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Grants Pass",
+        "state": "Oregon",
+        "zip": "97527",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Medford",
+        "state": "Oregon",
+        "zip": "97504",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Portland",
+        "state": "Oregon",
+        "zip": "97202",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "DuBois",
+        "state": "Pennsylvania",
+        "zip": "15801",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Philadelphia",
+        "state": "Pennsylvania",
+        "zip": "19140",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Smithfield",
+        "state": "Pennsylvania",
+        "zip": "15478",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Rock Hill",
+        "state": "South Carolina",
+        "zip": "29732",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Knoxville",
+        "state": "Tennessee",
+        "zip": "37919",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Austin",
+        "state": "Texas",
+        "zip": "78759",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Forney",
+        "state": "Texas",
+        "zip": "75126",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kingwood",
+        "state": "Texas",
+        "zip": "77339",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Tyler",
+        "state": "Texas",
+        "zip": "75708",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Victoria",
+        "state": "Texas",
+        "zip": "77901",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Bellingham",
+        "state": "Washington",
+        "zip": "98225",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kingwood",
+        "state": "West Virginia",
+        "zip": "26537",
+        "country": "United States"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Buenos Aires",
+        "state": null,
+        "zip": "C1425BEN",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Ciudad Autonoma de Buenos Aires",
+        "state": null,
+        "zip": "1128",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Ciudad de Buenos Aires",
+        "state": null,
+        "zip": "1425",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "La Plata",
+        "state": null,
+        "zip": "B1900",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Mendoza",
+        "state": null,
+        "zip": "5500",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Rosario",
+        "state": null,
+        "zip": "2000",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "San Miguel de Tucuman",
+        "state": null,
+        "zip": "4000",
+        "country": "Argentina"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Caxias do Sul",
+        "state": null,
+        "zip": "95070-560",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Criciuma",
+        "state": null,
+        "zip": "88811-000",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Porto Alegre",
+        "state": null,
+        "zip": "9061-000",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Porto Alegre",
+        "state": null,
+        "zip": "91350-200",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Salvador",
+        "state": null,
+        "zip": "40050 410",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Santo Andre",
+        "state": null,
+        "zip": "09080-110",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Sao Jose Do Rio Preto",
+        "state": null,
+        "zip": "15090-000",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Sao Paulo",
+        "state": null,
+        "zip": "04014-002",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Sao Paulo",
+        "state": null,
+        "zip": "05403-000",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Sorocaba",
+        "state": null,
+        "zip": "18040-425",
+        "country": "Brazil"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Curico",
+        "state": null,
+        "zip": "3341643",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Quillota",
+        "state": null,
+        "zip": "2260000",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Santiago",
+        "state": null,
+        "zip": "7500657",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Santiago",
+        "state": null,
+        "zip": "7501126",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Santiago",
+        "state": null,
+        "zip": "7750495",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Victoria",
+        "state": null,
+        "zip": "4720000",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Vi\u00f1a del Mar",
+        "state": null,
+        "zip": "2540488",
+        "country": "Chile"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Brest Cedex",
+        "state": null,
+        "zip": "29200",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Creteil",
+        "state": null,
+        "zip": "94010",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lyon Cedex 04",
+        "state": null,
+        "zip": "69317",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Marseille",
+        "state": null,
+        "zip": "13015",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Pessac",
+        "state": null,
+        "zip": "33604",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Suresnes",
+        "state": null,
+        "zip": "92150",
+        "country": "France"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Athens",
+        "state": null,
+        "zip": "11521",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Athens",
+        "state": null,
+        "zip": "17562",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Ioannina",
+        "state": null,
+        "zip": "45500",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Patras",
+        "state": null,
+        "zip": "26500",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Thessaloniki",
+        "state": null,
+        "zip": "57001",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Thessaloniki",
+        "state": null,
+        "zip": "57010",
+        "country": "Greece"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Balassagyarmat",
+        "state": null,
+        "zip": "2660",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Budapest",
+        "state": null,
+        "zip": "1036",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Budapest",
+        "state": null,
+        "zip": "1121",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Debrecen",
+        "state": null,
+        "zip": "4032",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "G\u00f6d\u00f6ll\u0151",
+        "state": null,
+        "zip": "2100",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "P\u00e9cs",
+        "state": null,
+        "zip": "7635",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "T\u00f6r\u00f6kb\u00e1lint",
+        "state": null,
+        "zip": "2045",
+        "country": "Hungary"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Haifa",
+        "state": null,
+        "zip": "3109601",
+        "country": "Israel"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Jerusalem",
+        "state": null,
+        "zip": "91120",
+        "country": "Israel"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kfar-saba",
+        "state": null,
+        "zip": "44281",
+        "country": "Israel"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Catania",
+        "state": null,
+        "zip": "95123",
+        "country": "Italy"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Foggia",
+        "state": null,
+        "zip": "71100",
+        "country": "Italy"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Genoa",
+        "state": null,
+        "zip": "16132",
+        "country": "Italy"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Roma",
+        "state": null,
+        "zip": "00168",
+        "country": "Italy"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Fukuoka-shi",
+        "state": null,
+        "zip": "811-1394",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Fukuoka-shi",
+        "state": null,
+        "zip": "819-8555",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Ginowan-shi",
+        "state": null,
+        "zip": "901-2214",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kagoshima City",
+        "state": null,
+        "zip": "890-0053",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kawaguchi-shi",
+        "state": null,
+        "zip": "332-8558",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kiyose-shi",
+        "state": null,
+        "zip": "204-8585",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kobe-shi",
+        "state": null,
+        "zip": "650-0017",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Meguro-ku",
+        "state": null,
+        "zip": "152-8902",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Miura city",
+        "state": null,
+        "zip": "238-0111",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Takamatsu-shi",
+        "state": null,
+        "zip": "761-8073",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Ube",
+        "state": null,
+        "zip": "755-8505",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Yokohama-shi",
+        "state": null,
+        "zip": "232-0024",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Yokohama-shi",
+        "state": null,
+        "zip": "245-8575",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Yokohama",
+        "state": null,
+        "zip": "232-0066",
+        "country": "Japan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lima",
+        "state": null,
+        "zip": "15046",
+        "country": "Peru"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lima",
+        "state": null,
+        "zip": "LIMA 1",
+        "country": "Peru"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lima",
+        "state": null,
+        "zip": "LIMA 21",
+        "country": "Peru"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lima",
+        "state": null,
+        "zip": "LIMA 33",
+        "country": "Peru"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Iloilo City",
+        "state": null,
+        "zip": "5000",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Las Pinas",
+        "state": null,
+        "zip": "1742",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Lipa City",
+        "state": null,
+        "zip": "4217",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Manadaluyong City",
+        "state": null,
+        "zip": "1552",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Quezon City",
+        "state": null,
+        "zip": "1100",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Roxas City",
+        "state": null,
+        "zip": "5800",
+        "country": "Philippines"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Benoni",
+        "state": null,
+        "zip": "1501",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Brackenfell",
+        "state": null,
+        "zip": "7560",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Cape Town",
+        "state": null,
+        "zip": "7700",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Durban",
+        "state": null,
+        "zip": "4093",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Somerset West",
+        "state": null,
+        "zip": "7130",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Tygervalley",
+        "state": null,
+        "zip": "7530",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Umkomaas",
+        "state": null,
+        "zip": "4170",
+        "country": "South Africa"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Barcelona",
+        "state": null,
+        "zip": "08003",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Barcelona",
+        "state": null,
+        "zip": "8025",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Madrid",
+        "state": null,
+        "zip": "28041",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Merida",
+        "state": null,
+        "zip": "06800",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "M\u00e1laga",
+        "state": null,
+        "zip": "29010",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Patraix",
+        "state": null,
+        "zip": "46017",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Santander",
+        "state": null,
+        "zip": "39008",
+        "country": "Spain"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Kaohsiung",
+        "state": null,
+        "zip": "80756",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "New Taipei",
+        "state": null,
+        "zip": "231",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taichung City",
+        "state": null,
+        "zip": "433004",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taichung",
+        "state": null,
+        "zip": "40705",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taipei City",
+        "state": null,
+        "zip": "110",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taipei City",
+        "state": null,
+        "zip": "11696",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taipei",
+        "state": null,
+        "zip": "10002",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Taipei",
+        "state": null,
+        "zip": "11220",
+        "country": "Taiwan"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Bangkok",
+        "state": null,
+        "zip": "10700",
+        "country": "Thailand"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Chiang Rai",
+        "state": null,
+        "zip": "57000",
+        "country": "Thailand"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Chonburi",
+        "state": null,
+        "zip": "20000",
+        "country": "Thailand"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Khon Kaen",
+        "state": null,
+        "zip": "40002",
+        "country": "Thailand"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Mueang Chanthaburi",
+        "state": null,
+        "zip": "22000",
+        "country": "Thailand"
+      },
+      {
+        "status": null,
+        "name": "Research Site",
+        "city": "Nakhon Sri Thammarat",
+        "state": null,
+        "zip": "80000",
+        "country": "Thailand"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Asthma"
+      }
+    ],
+    "interventions": [
+      {
+        "id": "98901338",
+        "intervention_type": "DRUG",
+        "name": "Tozorakimab",
+        "description": "The drug will be administered subcutaneously."
+      },
+      {
+        "id": "98901339",
+        "intervention_type": "DRUG",
+        "name": "Placebo",
+        "description": "Placebo will be administered subcutaneously."
+      }
+    ],
+    "interventions_other_names": [
+      {
+        "intervention_id": "NA",
+        "name": "NA"
+      }
+    ],
+    "browse_conditions": [
+      {
+        "mesh_term": "Asthma"
+      }
+    ],
+    "browse_interventions": [
+      {
+        "mesh_term": "NA"
+      }
+    ],
+    "keywords": [
+      {
+        "name": "NA"
+      }
+    ],
+    "design_groups": [
+      {
+        "id": "106360345",
+        "group_type": "EXPERIMENTAL",
+        "title": "Tozorakimab Dose 1",
+        "description": "Dosing subcutaneously tozorakimab Dose 1"
+      },
+      {
+        "id": "106360346",
+        "group_type": "EXPERIMENTAL",
+        "title": "Tozorakimab Dose 2",
+        "description": "Dosing subcutaneously tozorakimab Dose 2 and placebo"
+      },
+      {
+        "id": "106360347",
+        "group_type": "PLACEBO_COMPARATOR",
+        "title": "Placebo",
+        "description": "Dosing subcutaneously with equivalent volume to tozorakimab"
+      }
+    ],
+    "adverse_events": null,
+    "patient_summary": null,
+    "submissions": [
+      {
+        "version": 1,
+        "submitted_date": "2025-03-20",
+        "changes": [
+          {
+            "section": "None"
+          }
+        ]
+      }
+    ],
+    "document_count": 0,
+    "document_total_page_count": 0,
+    "documents": [
+      {
+        "original_url": "https://www.clinicaltrials.gov/study/NCT06890351?tab=table",
+        "s3_path": "NCT06890351/NCT06890351_tabular_view.pdf",
+        "category": "Tabular View",
+        "title": "Dose Range Finding Study to Assess Efficacy and Safety of Tozorakimab in Adults With Uncontrolled Asthma on Medium-to-High Dose Inhaled Corticosteroids",
+        "page_count": 4
+      },
+      {
+        "original_url": "https://www.clinicaltrials.gov/study/NCT06890351",
+        "s3_path": "NCT06890351/NCT06890351_study_details.pdf",
+        "category": "Study Details",
+        "title": "Dose Range Finding Study to Assess Efficacy and Safety of Tozorakimab in Adults With Uncontrolled Asthma on Medium-to-High Dose Inhaled Corticosteroids",
+        "page_count": 9
+      }
+    ]
+  }
