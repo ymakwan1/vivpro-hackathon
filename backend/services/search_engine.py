@@ -80,6 +80,32 @@ class SearchEngine:
                     }
                 }
             })
+        
+        if entities.get("condition") or entities.get("keyword"):
+            must_clauses.append({
+                "multi_match": {
+                    "query": entities.get("condition") or entities.get("keyword"),
+                    "fields": [
+                        "brief_title", 
+                        "official_title", 
+                        "conditions", 
+                        "sponsors.name"
+                    ],
+                    "fuzziness": "AUTO"
+                }
+            })
+
+        if entities.get("sponsor"):
+            must_clauses.append({
+                "multi_match": {
+                    "query": entities["sponsor"],
+                    "fields": [
+                        "sponsors.name",         
+                        "sponsors.agency_class"
+                    ],
+                    "operator": "and"
+                }
+            })
 
         query = {"query": {"bool": {"must": must_clauses}}}
         return self.es.search(index=self.index, body=query)

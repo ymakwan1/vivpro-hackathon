@@ -15,6 +15,7 @@ class QueryBrain:
         - phase: Map "Phase 1" to "PHASE1", "Phase 2" to "PHASE2", etc.
         - city: Extract the city name if present.
         - condition: Extract the medical condition (e.g., Asthma, Cancer).
+        - sponsor: Extract the name of the organization or agency (e.g., NIH, Pfizer).
 
         Example: "open phase 3 trials in Miami for Asthma"
         Output: {{"overall_status": "RECRUITING", "phase": "PHASE3", "city": "Miami", "condition": "Asthma"}}
