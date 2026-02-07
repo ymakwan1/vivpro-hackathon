@@ -169,7 +169,8 @@ class SearchEngine:
                 "bool": {
                     "must": must_clauses
                 }
-            }
+            },
+            "size": 1000
         }
         
         return self.es.search(index=self.index, body=query)
