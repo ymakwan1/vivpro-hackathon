@@ -5,18 +5,37 @@ from pathlib import Path
 
 from elastic_transport import ConnectionError as ElasticConnectionError
 from elastic_transport import TransportError
-from elasticsearch import Elasticsearch, helpers
+from elasticsearch import ApiError, Elasticsearch, helpers
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 ES_HOST = os.getenv("ES_HOST", "http://localhost:9200")
 INDEX_NAME = os.getenv("ES_INDEX_NAME", "clinical_trials_es")
+ES_COMPAT_VERSION = os.getenv("ES_COMPAT_VERSION", "8")
 DATA_PATH = Path(__file__).resolve().parent / "data" / "clinical_trials.json"
+
+
+def compatibility_headers() -> dict[str, str]:
+    """Build compatibility headers for Elasticsearch server versions.
+
+    elasticsearch-py 9.x sends compatible-with=9 by default, which breaks against
+    Elasticsearch 8 clusters. Default to compatibility version 8, with opt-out via
+    ES_COMPAT_VERSION="".
+    """
+    if not ES_COMPAT_VERSION:
+        return {}
+
+    media_type = f"application/vnd.elasticsearch+json; compatible-with={ES_COMPAT_VERSION}"
+    return {
+        "accept": media_type,
+        "content-type": media_type,
+    }
 
 es = Elasticsearch(
     ES_HOST,
     basic_auth=None,
+    headers=compatibility_headers(),
     verify_certs=False,
     ssl_show_warn=False,
 )
@@ -37,7 +56,7 @@ def can_connect(client: Elasticsearch) -> bool:
             "Elasticsearch ping() failed but info() succeeded; continuing with indexing."
         )
         return True
-    except (ElasticConnectionError, TransportError) as exc:
+    except (ElasticConnectionError, TransportError, ApiError) as exc:
         logger.error("Could not connect to Elasticsearch at %s: %s", ES_HOST, exc)
         return False
 
