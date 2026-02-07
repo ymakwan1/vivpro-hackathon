@@ -58,6 +58,14 @@ def generate_actions():
     for trial in raw_data:
         source = trial.copy()
 
+        hv_val = str(source.get("healthy_volunteers", "")).upper()
+        if "ACCEPT" in hv_val or hv_val == "YES" or hv_val == "TRUE":
+            source["healthy_volunteers"] = True
+        elif "NA" in hv_val or not hv_val:
+            source.pop("healthy_volunteers", None)
+        else:
+            source["healthy_volunteers"] = False
+
         e_val = source.get("enrollment")
         if e_val is not None:
             try:
@@ -93,6 +101,14 @@ def index_data():
     es.indices.create(index=INDEX_NAME, body=get_mapping())
 
     success, errors = helpers.bulk(es, generate_actions(), raise_on_error=False)
+
+    if errors:
+        logger.error(f"Failed to index {len(errors)} docs.")
+        for i, error in enumerate(errors[:4]):
+            error_details = error.get('index', {}).get('error', {})
+            reason = error_details.get('reason')
+            doc_id = error.get('index', {}).get('_id')
+            logger.error(f"Doc {doc_id} failed because: {reason}")
     
     if errors:
         logger.error(f"Failed to index {len(errors)} docs.")
